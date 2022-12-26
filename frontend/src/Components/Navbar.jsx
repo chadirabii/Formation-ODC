@@ -1,15 +1,16 @@
 import React from "react";
 import orange from "../assets/orange.png";
+import { AiOutlineHome, AiOutlineUserAdd } from "react-icons/ai";
 
 export default function Navbar() {
   return (
-    <div className="shadow-xl navbar bg-lightBlue text-light ">
+    <div className="shadow-xl navbar bg-darkBlue text-light ">
       <div className="flex-1">
         <a href="#" className="flex flex-row items-center text-2xl gap-x-3">
           <img src={orange} width="50" alt="" />
         </a>
         <a href="" className="flex">
-          <span className="flex flex-row items-center ml-1 text-2xl font-bold text-orange-400">
+          <span className="flex flex-row items-center ml-1 text-2xl  text-orange-400">
             Orange
           </span>
           <span className="flex flex-row items-center ml-1 text-2xl font-bold">
@@ -18,13 +19,18 @@ export default function Navbar() {
         </a>
       </div>
       <div className="flex-none">
-        <ul className="px-10 text-lg menu menu-horizontal gap-x-3 ">
-          <li className=" hover:bg-primaryLight">
-            <a href="#">Home</a>
+        <ul className="px-10 text-lg flex  gap-x-10 ">
+          <li className="  hover:bg-primaryLight hover:rounded-lg">
+            <a href="#" className="flex flex-row gap-x-2 items-center p-3  ">
+              <AiOutlineHome />
+              Home
+            </a>
           </li>
 
-          <li className="hover:bg-primaryLight ">
-            <a href="#">Add user</a>
+          <li className="  hover:bg-primaryLight hover:rounded-lg">
+            <a href="#" className="flex flex-row gap-x-2 items-center p-3">
+              <AiOutlineUserAdd /> Add user
+            </a>
           </li>
         </ul>
       </div>

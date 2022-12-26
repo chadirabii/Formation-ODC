@@ -1,10 +1,12 @@
-module.exports = {
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+module.exports = withMT({
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
       colors: {
-        darkBlue: "#141d2f",
-        lightBlue: "#1e2a47",
+        darkBlue: "#111827",
+        lightBlue: "#1F2937",
         primary: "#0079ff",
         light: "#f6f8ff",
         primaryLight: "#4b6a9b",
@@ -16,4 +18,4 @@ module.exports = {
     themes: false,
   },
   plugins: [require("daisyui")],
-};
+});
