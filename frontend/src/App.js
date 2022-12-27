@@ -17,15 +17,6 @@ function App() {
         </Routes>
       </Router>
     </>
-    // <div className="">
-    //   <div>
-    //     <Navbar />
-    //   </div>
-    //   <div className="px-24 py-10">
-    //     {/* <Home /> */}
-    //     <AddUser />
-    //   </div>
-    // </div>
   );
 }
 
