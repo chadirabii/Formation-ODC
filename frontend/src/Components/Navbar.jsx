@@ -1,6 +1,10 @@
 import React from "react";
 import orange from "../assets/orange.png";
-import { AiOutlineHome, AiOutlineUserAdd } from "react-icons/ai";
+import {
+  AiOutlineHome,
+  AiOutlineUserAdd,
+  AiOutlineInfoCircle,
+} from "react-icons/ai";
 import { Link } from "react-router-dom";
 
 export default function Navbar() {
@@ -31,6 +35,15 @@ export default function Navbar() {
             <Link to="/add" className="flex flex-row gap-x-2 items-center p-3">
               <AiOutlineUserAdd />
               Add User
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/About"
+              className="flex flex-row gap-x-2 items-center p-3"
+            >
+              <AiOutlineInfoCircle />
+              About
             </Link>
           </li>
         </ul>

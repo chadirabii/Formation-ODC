@@ -4,10 +4,13 @@ import Swal from "sweetalert2";
 import man from "../assets/man.svg";
 
 export default function UserCard() {
+  
   return (
     <div className="">
+      <div> </div>
       <div className="card w-[350px] bg-darkBlue shadow-2xl shadow-black">
         <figure className="py-3">
+          
           <img
             className="w-32 h-32 pt-3 rounded-full ring ring-primary ring-opacity-80 offset-base-100 ring-offset-2"
             src={man}
