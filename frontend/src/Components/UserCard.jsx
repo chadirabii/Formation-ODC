@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import man from "../assets/man.svg";
 
@@ -32,7 +33,9 @@ export default function UserCard() {
           </div>
 
           <div className="justify-end card-actions">
-            <button className="btn btn-primary">Modify</button>
+            <button className="btn btn-primary">
+              <Link to="/update-user">Modify</Link>
+            </button>
             <button
               onClick={() =>
                 Swal.fire({
