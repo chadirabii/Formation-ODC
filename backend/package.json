@@ -1,5 +1,6 @@
 {
   "name": "backend",
+  "proxy": "http://localhost:3000",
   "version": "0.0.0",
   "private": true,
   "scripts": {
