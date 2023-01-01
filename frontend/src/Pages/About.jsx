@@ -1,4 +1,5 @@
 import React from "react";
+import me from "../assets/me.jpg";
 
 export default function About() {
   return (
@@ -19,8 +20,8 @@ export default function About() {
             <div className="relative pb-56 mb-4 rounded shadow lg:pb-64">
               <img
                 className="absolute object-cover w-full h-full rounded"
-                src="https://scontent.ftun2-2.fna.fbcdn.net/v/t39.30808-6/280497743_3217609291817363_8522683317701526001_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=174925&_nc_ohc=BJNwKI-aB1gAX96lAtY&_nc_ht=scontent.ftun2-2.fna&oh=00_AfAF2Av81mGAXKzoTibJ-uD5vx5fWtMFHByxsTbs4t7DWA&oe=63B00638"
-                alt="Person"
+                src={me}
+                alt="me"
               />
             </div>
             <div className="flex flex-col sm:text-center">
